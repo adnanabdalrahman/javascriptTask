@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .choiceList {
+        list-style-type: none;
+        width: 100%;
+        float: left;
+        margin: 10px;
+        }
+        .choiceList li{
+            float: left;
+            margin: 0 5px 0 0;
+            width: 100px;
+            height: 40px;
+            position: relative;
+        }
+        button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        #result{
+            margin: 8px 2px;
+            width: 100%;
+            float: left;
+        }
+    </style>
 </head>
-    <body>
-    dsadsad
+
+<head>
+        <h1>Rock Paper Scissor</h1>
+    </head>
+    <main>
+        <div>
+            <h3>Please select a choice !</h3>
+        </div>
+        <ul class="choiceList">
+            <li><button class="choice" value="rock" id="rock">Rock</button></li>
+            <li><button class="choice" value="paper" id="paper">Paper</button></li>
+            <li><button class="choice" value="scissor" id="scissor">Scissor</button></li>
+        </ul>
+        <div id="result">
+
+        </div>
+    </main>
+    <script type="application/javascript" src="assets/rock-paper-scissor-dom.js"></script>
+<script>
+
+</script>
 </body>
 </html>
