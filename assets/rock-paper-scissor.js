@@ -7,7 +7,7 @@ const possibles = ['ROCK','SCISSORS','PAPER',];
   };
 const randomKey = (Math.floor(Math.random() * possibles.length));
 const programChoice = possibles[randomKey];
-const userChoice = args[0].toString().toUpperCase();
+        const userChoice = args[0].toString().toUpperCase();
 compareResults(userChoice, programChoice);
 
 
@@ -27,15 +27,15 @@ function isValideArgs(args=[]){
 
 function compareResults(userChoice, programChoice){
     if (userChoice === programChoice){
-    console.log('DRAW, computer Choice was scissors');
+    console.log('DRAW, computer Choice was ' + programChoice);
     return 'DRAW';
   }
   if(userChoice === 'ROCK'){
     if(programChoice === 'SCISSORS'){
-      console.log('WIN!, computer Choice was scissors')
+      console.log('WIN!, computer Choice was ' + programChoice )
       return 'WIN'
     }else{
-      console.log('LOST!, computer Choice was Paper')
+      console.log('LOST!, computer Choice was ' + programChoice)
       return 'LOST'
     }
   }

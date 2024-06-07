@@ -8,8 +8,6 @@ if (!args.length) {
 const translatedText = args.map(translateToPigLatin);
 console.log(translatedText.join(' '));
 
-
-
 function translateToPigLatin(word){
     const twoConsonantStart = /^[^aeiou]{2}/;
     const oneConsonantStart = /^[^aeiou]/;
